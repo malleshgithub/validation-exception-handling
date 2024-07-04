@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "caac76c8-bc45-4547-8004-1760fcc3de70",
+		"name": "UserApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "35188179"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9191/save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"\",\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/users/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"sriyansh\",\r\n    \"email\": \"sriyansh@gmail.com\",\r\n    \"mobile\": \"9666464392\",\r\n    \"gender\": \"M\",\r\n    \"age\": 23,\r\n    \"nationality\": \"IND\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9191/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9191/users/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9191/users/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9191",
+					"path": [
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
